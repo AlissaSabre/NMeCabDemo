@@ -94,5 +94,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="LibNMeCab">
+      <Version>0.10.0-beta</Version>
+    </PackageReference>
+    <PackageReference Include="LibNMeCab.IpaDicBin">
+      <Version>0.10.0-beta</Version>
+    </PackageReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

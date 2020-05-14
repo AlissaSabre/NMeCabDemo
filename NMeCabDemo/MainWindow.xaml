@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NMeCabDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="NMeCab (IPA-DIC) Demonstration" Height="400" Width="600">
     <Grid>
-        
+        <TextBox x:Name="Input" Height="64" Margin="10,10,79,0" TextWrapping="Wrap" VerticalAlignment="Top">ここに解析するテクストを入力します。</TextBox>
+        <Button x:Name="GoButton" Content="解析" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="64" Height="64" Click="GoButton_Click"/>
+        <TextBlock x:Name="ElapsedTime" Text="{Binding TotalMilliseconds}" Margin="0,79,85,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+        <Label Content="milliseconds" Margin="0,74,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75"/>
+        <DataGrid x:Name="OutputGrid" Margin="10,100,10,10" HorizontalGridLinesBrush="{StaticResource {x:Static SystemColors.ControlLightBrushKey}}" VerticalGridLinesBrush="{StaticResource {x:Static SystemColors.ControlLightBrushKey}}" IsReadOnly="True" HeadersVisibility="Column">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Surface}" />
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
