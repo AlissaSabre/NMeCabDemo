@@ -11,7 +11,7 @@ and you need to check `Include prerelease` check box to find it on `Manage NuGet
 
 ## What is NMeCab?
 
-NMeCab is a C# port of the analysis library a famous Japanese morphological analyzer [MeCab](https://github.com/taku910/mecab).
+NMeCab is a C# port of the analysis library of a famous Japanese morphological analyzer [MeCab](https://github.com/taku910/mecab).
 It is _not_ a wrapper around the C++ MeCab binary, but a complete rewriting in C# with its own additional features.
 
 ## What is this program, NMeCabDemo?
@@ -29,7 +29,7 @@ NMeCab seemed the best solution.
 
 I wrote this program primarily to learn how I can use it.
 Unfortunately, the library was too _easy_ to use in its simple use cases, 
-and I got no much insight from this experience... :)
+and I got not much insight from this experience... :)
 
 ## Environment
 
