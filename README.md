@@ -1,6 +1,8 @@
 # NMeCabDemo
 A small demonstration program for [NMeCab](https://github.com/komutan/NMeCab), a Japanese morphological analyzer developed on .NET.
 
+![screenshot](images/NMeCabDemo.png)
+
 ### Note on package availability
 As of this writing (May 2020), there are several nuget packages for MeCab/NMecab available, 
 but the _official_ NMeCab packages ([LibNMeCab](https://www.nuget.org/packages/LibNMeCab) and [LibNMeCab.IpaDicBin](LibNMeCab.IpaDicBin)) 
