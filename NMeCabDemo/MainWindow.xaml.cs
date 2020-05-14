@@ -36,7 +36,7 @@ namespace NMeCabDemo
             Busy = true;
             try
             {
-                var input = Input.Text;
+                var input = Input.Text.Trim(); // Trim is a workaround on https://github.com/komutan/NMeCab/issues/13
                 var started = DateTime.UtcNow;
                 var output = await Task.Run(() => Tagger.Parse(input));
                 ElapsedTime.DataContext = DateTime.UtcNow - started;
