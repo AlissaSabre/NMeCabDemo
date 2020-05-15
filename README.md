@@ -7,7 +7,7 @@ A small demonstration program for [NMeCab](https://github.com/komutan/NMeCab), a
 As of this writing (May 2020), there are several nuget packages for MeCab/NMecab available, 
 but the _official_ NMeCab packages ([LibNMeCab](https://www.nuget.org/packages/LibNMeCab) and [LibNMeCab.IpaDicBin](LibNMeCab.IpaDicBin)) 
 that this demonstration uses are still in prerelease stage,
-and you need to check `Include prerelease` check box to find it on `Manage NuGet Package for Solution...` on Visual Studio.
+and you need to check `Include prerelease` check box to find them on `Manage NuGet Package for Solution...` on Visual Studio.
 
 ## What is NMeCab?
 
