@@ -12,10 +12,18 @@ namespace NMeCabDemo
         {
             InitializeComponent();
 
-            var started = DateTime.UtcNow;
-            Tagger = NMeCabIpaDic.CreateTagger();
-            ElapsedTime.DataContext = DateTime.UtcNow - started;
-            OutputGrid.ItemsSource = new MeCabIpaDicNode[0]; // to initialize the DataGrid column header
+            try
+            {
+                var started = DateTime.UtcNow;
+                Tagger = NMeCabIpaDic.CreateTagger();
+                ElapsedTime.DataContext = DateTime.UtcNow - started;
+                OutputGrid.ItemsSource = new MeCabIpaDicNode[0]; // to initialize the DataGrid column header
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.ToString(), "Exception");
+                throw;
+            }
         }
 
         private MeCabIpaDicTagger Tagger;
